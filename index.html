@@ -288,7 +288,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 				<div class="elementor-element elementor-element-e400e46 elementor-widget elementor-widget-jkit_dual_button" data-id="e400e46" data-element_type="widget" data-e-type="widget" data-widget_type="jkit_dual_button.default">
 				<div class="elementor-widget-container">
-					<div class="jeg-elementor-kit jkit-dual-button jeg_module_28_3_69f70fc5ab242"><div class="jkit-dual-button-wrapper"><a href="tel:7036153153" class="jkit-dual-btn jkit-dual-button-one icon-position-before"><i aria-hidden="true" class="fas fa-phone-square-alt"></i>Call 7036153153</a><a href="/" class="jkit-dual-btn jkit-dual-button-two icon-position-before"><i aria-hidden="true" class="far fa-check-circle"></i>Book Now</a></div></div>				</div>
+					<div class="jeg-elementor-kit jkit-dual-button jeg_module_28_3_69f70fc5ab242"><div class="jkit-dual-button-wrapper"><a href="tel:7036153153" class="jkit-dual-btn jkit-dual-button-one icon-position-before"><i aria-hidden="true" class="fas fa-phone-square-alt"></i>Call 7036153153</a><a href="/contact/" class="jkit-dual-btn jkit-dual-button-two book-now-btn icon-position-before"><i aria-hidden="true" class="far fa-check-circle"></i>Book Now</a></div></div>				</div>
 				</div>
 					</div>
 		</div>
@@ -672,7 +672,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 				<div class="elementor-element elementor-element-cc741fd elementor-widget elementor-widget-jkit_dual_button" data-id="cc741fd" data-element_type="widget" data-e-type="widget" data-widget_type="jkit_dual_button.default">
 				<div class="elementor-widget-container">
-					<div class="jeg-elementor-kit jkit-dual-button jeg_module_28_4_69f70fc5acf23"><div class="jkit-dual-button-wrapper"><a href="tel:7036153153" class="jkit-dual-btn jkit-dual-button-one icon-position-before"><i aria-hidden="true" class="fas fa-phone-square-alt"></i>Call 7036153153</a><a href="" class="jkit-dual-btn jkit-dual-button-two icon-position-before"><i aria-hidden="true" class="far fa-check-circle"></i>Book Now</a></div></div>				</div>
+					<div class="jeg-elementor-kit jkit-dual-button jeg_module_28_4_69f70fc5acf23"><div class="jkit-dual-button-wrapper"><a href="tel:7036153153" class="jkit-dual-btn jkit-dual-button-one icon-position-before"><i aria-hidden="true" class="fas fa-phone-square-alt"></i>Call 7036153153</a><a href="/contact/" class="jkit-dual-btn jkit-dual-button-two book-now-btn icon-position-before"><i aria-hidden="true" class="far fa-check-circle"></i>Book Now</a></div></div>				</div>
 				</div>
 					</div>
 		</div>
@@ -1352,7 +1352,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     <img src="assets/eden-logo.png"
          alt="Eden Packers and Movers Tirupati Logo"
          style="width: 90px; height: 90px; border-radius: 16px; box-shadow: 0 8px 25px rgba(243,156,18,0.35); object-fit: cover; margin-bottom: 14px; display: block; margin-left: auto; margin-right: auto;">
-    <div style="color: #fff; font-size: 20px; font-weight: 800; letter-spacing: 1px; font-family: 'Inter', 'Roboto', sans-serif; margin-bottom: 4px;">
+    <div class="footer-logo-title" style="font-size: 20px; font-weight: 800; letter-spacing: 1px; font-family: 'Inter', 'Roboto', sans-serif; margin-bottom: 4px;">
         EDEN PACKERS &amp; MOVERS
     </div>
     <div style="color: #f39c12; font-size: 13px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; font-family: 'Inter', 'Roboto', sans-serif; margin-bottom: 12px;">
@@ -1362,6 +1362,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         &copy; 2026 Eden Packers &amp; Movers. All rights reserved.
     </div>
 </div>
+<style>
+.footer-logo-title {
+    color: #fffeff;
+}
+</style>
 <!-- END FOOTER LOGO BRAND -->
 
 </footer>
@@ -2070,6 +2075,17 @@ var ekit_config = {"ajaxurl":"","nonce":"d149761d98"};
 </div>
 <!-- END LOTTIE MOVING TRUCK ANIMATION -->
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+    if (isMobile) {
+        var bookButtons = document.querySelectorAll(".book-now-btn");
+        bookButtons.forEach(function(btn) {
+            btn.setAttribute("href", "https://wa.me/917036153153");
+        });
+    }
+});
+</script>
 </body></html>
 
 
